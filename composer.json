@@ -1,5 +1,6 @@
 {
-    "name": "codex/dev",
+    "name": "codex/addon-dev",
+    "type": "codex-addon",
     "description": "Dev tools.",
     "keywords": ["laravel", "documentation", "docs", "markdown", "codex"],
     "homepage": "http://codex-project.ninja",
@@ -9,6 +10,8 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.0.0",
+        "codex/core": "2.0.*",
+        "codex/composer-plugin": "2.0.*",
         "laradic/support": "~1.0.1",
         "laradic/service-provider": "~1.0",
         "illuminate/contracts": "~5.4.16",
@@ -16,11 +19,6 @@
         "illuminate/container": "~5.4.16",
         "illuminate/log": "~5.4",
         "illuminate/cache": "~5.4"
-    },
-    "suggest": {
-        "codex/addon-git": "Enables Github/Bitbucket integration and automatisation (~2.0)",
-        "codex/addon-auth": "Enables authorisation for projects (~2.0)",
-        "codex/addon-phpdoc": "Integrates PHPDoc into Codex (~2.0)"
     },
     "require-dev": {
         "laradic/testing": "1.0.*"
