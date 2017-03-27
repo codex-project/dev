@@ -1,0 +1,45 @@
+{
+    "name": "codex/dev",
+    "description": "Dev tools.",
+    "keywords": ["laravel", "documentation", "docs", "markdown", "codex"],
+    "homepage": "http://codex-project.ninja",
+    "authors": [{"name": "Robin Radic", "email": "robin@radic.nl"}],
+    "license": "MIT",
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0",
+        "laradic/support": "~1.0.1",
+        "laradic/service-provider": "~1.0",
+        "illuminate/contracts": "~5.4.16",
+        "illuminate/view": "~5.4",
+        "illuminate/container": "~5.4.16",
+        "illuminate/log": "~5.4",
+        "illuminate/cache": "~5.4"
+    },
+    "suggest": {
+        "codex/addon-git": "Enables Github/Bitbucket integration and automatisation (~2.0)",
+        "codex/addon-auth": "Enables authorisation for projects (~2.0)",
+        "codex/addon-phpdoc": "Integrates PHPDoc into Codex (~2.0)"
+    },
+    "require-dev": {
+        "laradic/testing": "1.0.*"
+    },
+    "autoload": {
+        "files": [
+        ],
+        "psr-4": {
+            "Codex\\Dev\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Codex\\Tests\\Dev\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    }
+}
